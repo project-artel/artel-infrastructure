@@ -1,0 +1,21 @@
+jenkins:
+  systemMessage: "SOMA CI/CD Jenkins controller"
+  numExecutors: 2
+  mode: NORMAL
+  scmCheckoutRetryCount: 2
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "${JENKINS_ADMIN_ID:-admin}"
+          password: "${JENKINS_ADMIN_PASSWORD:-admin}"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+
+unclassified:
+  location:
+    url: "${JENKINS_URL:-http://localhost:8080/}"
+
+jobs:
+  - file: /usr/share/jenkins/ref/jobs/seed/config.groovy
