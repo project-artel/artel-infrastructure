@@ -1,0 +1,10 @@
+atlassian-jira-software-cloud
+configuration-as-code
+credentials-binding
+docker-workflow
+git
+job-dsl
+pipeline-stage-view
+ssh-agent
+workflow-aggregator
+ws-cleanup
