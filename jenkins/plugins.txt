@@ -3,6 +3,7 @@ configuration-as-code
 credentials-binding
 docker-workflow
 git
+github-branch-source
 job-dsl
 pipeline-stage-view
 ssh-agent
